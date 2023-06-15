@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<style>
+  .league-pic{
+    display:none;
+  }
+  .foot{
+    grid-row: 5;
+  }
+  .navigation{
+    grid-column: 1/4;
+    grid-row: 1;
+    box-shadow:  0PX 5PX 5PX rgb(255, 2, 234);
+    border-radius: 10PX;
+    height: 90px;
+  }
+  .main-body{
+    margin-top: -50px;
+    grid-row: 2;
+  }
+  table{  
+    margin-top: 20PX;
+    text-align: center;
+    background-color: rgba(209, 15, 190, 0.5);
+    box-shadow: 0PX 10PX 10PX 5PX rgb(255, 2, 234);
+    border-radius: 20PX;
+    padding: 20px;
+    width: 100%;
+  }
+  td{
+    border: 2px solid;
+    border-color: rgb(255, 3, 221);
+    padding:0px;
+    width:20px;  
+  }    
+  .arrow {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -20px;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    cursor: pointer;
+ }
+
+.arrow span {
+    
+    display: block;
+    width: 1.0vw;
+    height: 1.0vw;
+    border-bottom: 5px solid rgb(0, 255, 38);
+    border-right: 5px solid rgb(0, 255, 64);
+    transform: rotate(270deg);
+    margin: 0px;
+    animation: animate 1.5s infinite;
+}
+li{
+   text-align: center;
+   width: 100px;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+.foot{
+  text-align: center;
+  grid-column: 1/4;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+    <img src="cr7banner.jpg" class="banner" width="950px" >
+    <div class="container">
+        <div class="league-pic">
+          <img class="uclpic" src="UCL TROPHY.png">
+          <img class="uconlpic" src="UEFAECLTROPHY.png">
+          <img class="ueuclpic" src="UELTROPHY.png">
+          <img class="premier-league" src="pl.png">
+          <img class="serie-A" src="seriaA.png">
+          <img class="ligue1" src="ligue1.png">
+          <img class="laliga" src="laliga.png">
+          <img class="bundes" src="bundes.png">
+          
+
+        </div>
+        
+        <div class="navigation">
+          <H2 style="text-align: center;">MyFootBall-11</H2>
+          <nav>
+            <ul>
+              <li><a href="index.html" style="text-decoration: none;color: aqua;">HOME</a></li>
+              <li>NEWS</li>
+              <li><a href="transfer.html"style="text-decoration: none;color: rgb(255, 3, 221) ">TRANSFERS</a></li>
+              <li>FANTASY</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-body">
+          <h1>Latest Transfers</h1>
+          <table>
+            <tr>
+                <td style="width:100px">SL#</td>
+                <td>Player</td>
+                <td>From</td>
+                <td width="90px">
+                    
+                </td>
+                <td>To</td>
+                <td>Value</td>
+            </tr>
+            <tr>
+              <TD>1.</TD>
+                <td><img src="messitransfer.png" width="100px">Lionel Messi</td>
+                <td><img src="psg.png" width="90px"></td>
+                <td>
+                    <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </td>
+                <td><img src="intermiami.png" width="120px"></td>
+                <td>£45M</td>
+              </tr>
+            <tr>
+              <TD>2.</TD>
+              <td><img src="jude.png" width="100px">Jude Bellingam</td>
+              <td><img src="dortmund.png" width="90px"></td>
+              <td>
+                  <div class="arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </td>
+              <td><img src="real madrid.png" width="90px"></td>
+              <td>----</td>
+            </tr>
+          <tr>
+            <TD>3.</TD>
+            <td><img src="mcallister.png" width="100px">Alexis Mac-Allister</td>
+            <td><img src="brighton.png" width="140px"></td>
+            <td>
+                <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </td>
+            <td><img src="arsenal.png" width="80px"></td>
+            <td>£36M</td>
+          </tr>
+          <tr>
+            <TD>4.</TD>
+            <td><img src="enzo.png" width="100px">Enzo Fernandes</td>
+            <td><img src="benefica.png" width="70px"></td>
+            <td>
+                <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </td>
+            <td><img src="chelsea.png" width="70px"></td>
+            <td>£106.8M</td>
+          </tr>
+        </table>
+
+        </div>
+       
+        <div class="foot">MyFootBall11 &copy;2023</div>
+    </div>
+</body>
+</html>
